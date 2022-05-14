@@ -24,7 +24,7 @@ This is the most up-to-date version of `pyremote`
 Retreive a dataframe of live MLB games and their corresponding interest index values (sorted) with `get_interest_index_df()`. 
 ```python
 >>> from pyremote import interest_index_scoring as iis
->>> mlblivedata = iis.MlbLiveData()
+>>> mlblivedata = iis.MLBLiveData()
 >>> interest_index_df = mlblivedata.get_interest_index_df()
 >>> print(interest_index_df)
 ```
@@ -33,7 +33,7 @@ Retreive a dataframe of live MLB games and their corresponding interest index va
 Retreive a dataframe of live MLB games and relevant information with `get_live_situation_df()`.
 ```python
 >>> from pyremote import interest_index_scoring as iis
->>> mlblivedata = iis.MlbLiveData()
+>>> mlblivedata = iis.MLBLiveData()
 >>> live_situation_df = mlblivedata.get_live_situation_df()
 >>> print(live_situation_df)
 ```
@@ -41,7 +41,7 @@ Retreive a dataframe of live MLB games and relevant information with `get_live_s
 Retreive a dataframe of interest index values and variables with `get_ii_calculations()`.
 ```python
 >>> from pyremote import interest_index_scoring as iis
->>> mlblivedata = iis.MlbLiveData()
+>>> mlblivedata = iis.MLBLiveData()
 >>> ii_calculations_df = mlblivedata.get_ii_calculations()
 >>> print(ii_calculations_df)
 ```
