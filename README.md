@@ -1,5 +1,5 @@
 # pyremote
-## v0.0.1-beta.1 Release: May 14, 2022
+## v0.0.1-beta.2 Release: May 14, 2022
 See [CHANGELOG.md](CHANGELOG.md) for details
 
 `pyremote` creates models using the *interest index* to determine which sports games are most worth watching in various sports. This project is a work-in-progress and does not promise any results. See [docs](docs) for a comprehensive list of functions and functionality. 
