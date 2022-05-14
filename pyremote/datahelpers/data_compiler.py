@@ -1,4 +1,4 @@
-from datasources.parse_html import ParseHtml
+from pyremote.datasources.parse_html import ParseHtml
 import pandas as pd
 
 def df_compiler():

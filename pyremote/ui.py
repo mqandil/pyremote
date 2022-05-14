@@ -1,7 +1,6 @@
-from multiprocessing.sharedctypes import Value
-from interest_index_scoring import MLBLiveData as mlblive
+from pyremote.interest_index_scoring import MLBLiveData as mlblive
 import webbrowser
-from datasources.request_timer import randtime
+from pyremote.datasources.request_timer import randtime
 import time
 
 class OptimalLinkInfo():

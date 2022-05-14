@@ -1,4 +1,4 @@
-from interest_index_scoring import MLBLiveData as mlblive
+from pyremote.interest_index_scoring import MLBLiveData as mlblive
 import webbrowser
 
 mlblivedata = mlblive()
