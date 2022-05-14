@@ -3,11 +3,11 @@ from setuptools import setup, find_packages
 # with open("README.md", "r") as readme_file:
 #     readme = readme_file.read()
 
-requirements = ['pandas>=1.3.2', 'numpy>=1.21.2', 'yfinance>=0.1.70', 'scipy>=1.7.1', 'plotly>=5.7.0',]
+requirements = ['pandas>=1.3.2', 'numpy>=1.21.2', 'scipy>=1.7.1', 'plotly>=5.7.0',]
 
 setup(
     name="pyremote",
-    version="1.0.0",
+    version="0.0.1",
     author="Matthew Qandil",
     description="A package to Optimize Stock Portfolios",
     # long_description=readme,
