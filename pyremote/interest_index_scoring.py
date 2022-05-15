@@ -5,6 +5,7 @@ from pyremote.datahelpers.data_compiler import df_compiler
 class MLBLiveData():
     def __init__(self):
         self.live_data = df_compiler()
+
         # Adding Scores
         self.live_data['runners_score'] = self.live_data['runners'].map(runners_value_dict)
         self.live_data['inning_score'] = self.live_data.apply(

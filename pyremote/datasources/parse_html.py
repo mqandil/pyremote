@@ -61,6 +61,7 @@ class ParseHtml():
 
 
 if __name__ == '__main__':
-    test = ParseHtml()
-    test2 = test.get_outs()
-    print(test2)
+    # test = ParseHtml()
+    # test2 = test.get_runners()
+    # print(test2)
+    print(get_html('https://www.mlb.com'))

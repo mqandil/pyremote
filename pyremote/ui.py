@@ -1,8 +1,17 @@
 from pyremote.interest_index_scoring import MLBLiveData as mlblive
 import webbrowser
-from pyremote.datasources.request_timer import variable_timer
 import time
 from IPython.display import display
+
+from pyremote.datasources.request_timer import randtime
+from tqdm import tqdm
+
+def variable_timer():
+	randtime_value = randtime()
+	randtime_mult = randtime_value*10
+
+	for i in tqdm(range(randtime_mult)):
+		time.sleep(0.1)
 
 class OptimalLinkInfo():
     def __init__(self):

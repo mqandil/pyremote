@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 with open("README.md", "r") as readme_file:
     readme = readme_file.read()
 
-requirements = ['pandas>=1.3.2', 'Beautifulsoup4>=4.9.3', 'requests>=2.26.0']
+requirements = ['pandas>=1.3.2', 'Beautifulsoup4>=4.9.3', 'requests>=2.26.0', 'tqdm>=4.62.2']
 
 setup(
     name="pyremote",
