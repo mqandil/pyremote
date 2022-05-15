@@ -52,7 +52,7 @@ def df_compiler():
     live_data = live_data.rename(columns={0: "link", 1: "away_team", 2: "away_score", 3: "home_team", 4: "home_score", 5: "inning"})
 
     # Remove Data where Final
-    live_data = live_data[live_data.inning != 'Final']
+    live_data = live_data[~live_data.inning.str.contains("Final", regex=False, na=False)]
     live_data = live_data[~live_data.inning.str.contains("ET", regex=False, na=False)]
 
     # Add Runners and Outs
