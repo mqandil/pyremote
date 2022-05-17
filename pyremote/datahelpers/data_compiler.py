@@ -54,6 +54,7 @@ def df_compiler():
     # Remove Data where Final
     live_data = live_data[~live_data.inning.str.contains("Final", regex=False, na=False)]
     live_data = live_data[~live_data.inning.str.contains("ET", regex=False, na=False)]
+    live_data = live_data[~live_data.inning.str.contains("TBD", regex=False, na=False)]
 
     # Add Runners and Outs
     live_data['runners'] = runners

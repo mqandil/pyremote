@@ -19,4 +19,4 @@ if __name__ == '__main__':
     display(mlblivedata.get_live_situation_df())
         # time.sleep(120)
     
-    webbrowser.get('safari').open(optimal_ii_link, new=0)
+    # webbrowser.get('safari').open(optimal_ii_link, new=0)
