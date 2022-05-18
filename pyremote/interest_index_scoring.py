@@ -1,10 +1,15 @@
 from pyremote.scoringmethods.scoring_dictionaries import runners_value_dict, outs_value_dict
 from pyremote.scoringmethods.scoring_functions import run_diff_score_index, lead_change_opp, leverage_qualifier_index, get_interest_index, inning_score_index
 from pyremote.datahelpers.data_compiler import df_compiler
+from pyremote.errorhandling.errors import RequestEmpty
 
 class MLBLiveData():
     def __init__(self):
         self.live_data = df_compiler()
+        
+        #Error Handling
+        if self.live_data.empty == True:
+            raise RequestEmpty('There are currently no live games! Please check again later. If you believe this is wrong, please reload the page and try again.')
 
         # Adding Scores
         self.live_data['runners_score'] = self.live_data['runners'].map(runners_value_dict)
