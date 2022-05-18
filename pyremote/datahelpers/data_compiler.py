@@ -1,5 +1,7 @@
 from pyremote.datasources.parse_html import ParseHtml
 import pandas as pd
+from IPython.display import display
+import numpy as np
 
 def df_compiler():
 
@@ -55,6 +57,7 @@ def df_compiler():
     live_data = live_data[~live_data.inning.str.contains("Final", regex=False, na=False)]
     live_data = live_data[~live_data.inning.str.contains("ET", regex=False, na=False)]
     live_data = live_data[~live_data.inning.str.contains("TBD", regex=False, na=False)]
+    live_data = live_data.replace(to_replace='None', value=np.nan).dropna()
 
     # Add Runners and Outs
     live_data['runners'] = runners
