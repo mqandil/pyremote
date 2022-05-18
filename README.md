@@ -15,6 +15,11 @@ git clone https://github.com/mqandil/pyremote
 cd pyremote
 pip install -e .
 ```
+or with pip: 
+```bash
+pip install git+https://github.com/mqandil/pyremote.git
+```
+
 This is the most up-to-date version of `pyremote`
 
 ## MLBLiveData
